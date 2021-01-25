@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FragmentsExample</string>
+    <string name="no_select">Не выбрано</string>
+</resources>
