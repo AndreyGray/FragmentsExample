@@ -20,7 +20,7 @@ public class ListFragment extends Fragment {
     }
 
     private OnFragmentSendDataListener fragmentSendDataListener;
-    String[] countries = { "Бразилия", "Аргентина", "Колумбия", "Чили", "Уругвай"};
+    String[] countries = {"Бразилия", "Аргентина", "Колумбия", "Чили", "Уругвай"};
 
 
     @Override
@@ -45,12 +45,11 @@ public class ListFragment extends Fragment {
         // устанавливаем для списка адаптер
         countriesList.setAdapter(adapter);
         // добавляем для списка слушатель
-        countriesList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        countriesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id)
-            {
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 // получаем выбранный элемент
-                String selectedItem = (String)parent.getItemAtPosition(position);
+                String selectedItem = (String) parent.getItemAtPosition(position);
                 // Посылаем данные Activity
                 fragmentSendDataListener.onSendData(selectedItem);
             }

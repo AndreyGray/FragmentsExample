@@ -9,7 +9,7 @@ import android.os.Bundle;
 import com.example.fragmentsexample.fragments.DetailFragment;
 import com.example.fragmentsexample.fragments.ListFragment;
 
-public class MainActivity extends AppCompatActivity  implements ListFragment.OnFragmentSendDataListener {
+public class MainActivity extends AppCompatActivity implements ListFragment.OnFragmentSendDataListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,19 +18,20 @@ public class MainActivity extends AppCompatActivity  implements ListFragment.OnF
         // получаем экземпляр манагера
         FragmentManager fm = getSupportFragmentManager();
         //создаем и выводим фрагмент список
-        Fragment listFragment =fm.findFragmentById(R.id.listFragment);
+        Fragment listFragment = fm.findFragmentById(R.id.listFragment);
         listFragment = new ListFragment();
         fm.beginTransaction()
-                .add(R.id.listFragment,listFragment)
+                .add(R.id.listFragment, listFragment)
                 .commit();
         //создаем и выводим фрагмент детали
-        Fragment detailFragment =fm.findFragmentById(R.id.detailFragment);
+        Fragment detailFragment = fm.findFragmentById(R.id.detailFragment);
         detailFragment = new DetailFragment();
         fm.beginTransaction()
-                .add(R.id.detailFragment,detailFragment)
+                .replace(R.id.detailFragment, detailFragment)
                 .commit();
 
     }
+
     //метод взаимодействия фрагментов
     @Override
     public void onSendData(String selectedItem) {

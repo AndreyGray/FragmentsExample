@@ -20,7 +20,7 @@ public class DetailFragment extends Fragment {
 
     // обновление текстового поля
     public void setSelectedItem(String selectedItem) {
-        TextView view = (TextView) getView().findViewById(R.id.detailsText);
+        TextView view = getView().findViewById(R.id.detailsText);
         view.setText(selectedItem);
     }
 }
