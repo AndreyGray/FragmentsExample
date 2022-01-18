@@ -11,6 +11,8 @@ import com.example.fragmentsexample.fragments.ListFragment;
 
 public class MainActivity extends AppCompatActivity implements ListFragment.OnFragmentSendDataListener {
 
+    //Hi there %)
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
