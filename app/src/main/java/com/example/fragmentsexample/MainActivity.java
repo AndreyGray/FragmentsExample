@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnFr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Hello people!!! %)
+
+
         // получаем экземпляр манагера
         FragmentManager fm = getSupportFragmentManager();
         //создаем и выводим фрагмент список
