@@ -20,7 +20,7 @@ public class ListFragment extends Fragment {
     }
 
     private OnFragmentSendDataListener fragmentSendDataListener;
-    String[] countries = {"Бразилия", "Аргентина", "Колумбия", "Чили", "Уругвай"};
+    String[] countries = {"Аргентина", "Бразилия", "Колумбия", "Чили", "Уругвай"};
 
 
     @Override
