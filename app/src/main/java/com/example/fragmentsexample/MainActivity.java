@@ -16,9 +16,6 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnFr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Hello people!!! %)
-
-
         // получаем экземпляр манагера
         FragmentManager fm = getSupportFragmentManager();
         //создаем и выводим фрагмент список
@@ -27,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnFr
         fm.beginTransaction()
                 .add(R.id.listFragment, listFragment)
                 .commit();
+
         //создаем и выводим фрагмент детали
         Fragment detailFragment = fm.findFragmentById(R.id.detailFragment);
         detailFragment = new DetailFragment();
